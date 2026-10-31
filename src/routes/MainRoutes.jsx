@@ -8,6 +8,9 @@ import ErrorPage from 'pages/ErrorPage';
 // render- Dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
 
+// render - UI components
+const UiComponentDetail = Loadable(lazy(() => import('pages/ui/detail')));
+
 // render - crypto tools
 const PasswordGenerator = Loadable(lazy(() => import('pages/tools/crypto/PasswordGenerator')));
 const PasswordAnalyzer = Loadable(lazy(() => import('pages/tools/crypto/PasswordAnalyzer')));
@@ -63,6 +66,15 @@ const MainRoutes = {
         {
           path: 'default',
           element: <DashboardDefault />
+        }
+      ]
+    },
+    {
+      path: 'ui',
+      children: [
+        {
+          path: ':slug',
+          element: <UiComponentDetail />
         }
       ]
     },

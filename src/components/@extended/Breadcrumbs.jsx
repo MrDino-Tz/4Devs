@@ -12,6 +12,8 @@ import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 // project imports
 import MainCard from 'components/MainCard';
 import navigation from 'menu-items';
+import { getCategoryBySlug } from 'data/categories';
+import { getUIComponentBySlug } from 'ui-registry';
 
 // assets
 import ApartmentOutlined from '@ant-design/icons/ApartmentOutlined';
@@ -55,40 +57,61 @@ export default function Breadcrumbs({
     customLocation = '/apps/customer/customer-card';
   }
 
+  const currentUrl = `${customLocation}${location.search}`;
+
   useEffect(() => {
-    navigation?.items?.map((menu) => {
-      if (menu.type && menu.type === 'group') {
-        if (menu?.url && menu.url === customLocation) {
-          setMain(menu);
-          setItem(menu);
-        } else {
-          getCollapse(menu);
+    let nextMain;
+    let nextItem;
+
+    const findInMenu = (menu) => {
+      if (menu?.url && menu.url === currentUrl) {
+        nextMain = menu;
+        nextItem = menu;
+        return true;
+      }
+
+      if (!custom && menu?.children) {
+        for (const child of menu.children) {
+          if (child.type === 'collapse' && findInMenu(child)) {
+            return true;
+          }
+          if (child.type === 'item' && child.url === currentUrl) {
+            nextMain = menu;
+            nextItem = child;
+            return true;
+          }
         }
       }
-      return false;
-    });
-  });
 
-  // set active item state
-  const getCollapse = (menu) => {
-    if (!custom && menu.children) {
-      menu.children.filter((collapse) => {
-        if (collapse.type && collapse.type === 'collapse') {
-          getCollapse(collapse);
-          if (collapse.url === customLocation) {
-            setMain(collapse);
-            setItem(collapse);
-          }
-        } else if (collapse.type && collapse.type === 'item') {
-          if (customLocation === collapse.url) {
-            setMain(menu);
-            setItem(collapse);
-          }
-        }
-        return false;
-      });
+      return false;
+    };
+
+    navigation?.items?.forEach((menu) => {
+      if (!nextItem && menu.type === 'group') {
+        findInMenu(menu);
+      }
+    });
+
+    // Categories are dashboard query states rather than sidebar entries.
+    if (!nextItem) {
+      const activeCategory = getCategoryBySlug(new URLSearchParams(location.search).get('category'));
+      if (activeCategory) {
+        nextItem = { ...activeCategory, title: activeCategory.name, type: 'item' };
+      }
     }
-  };
+
+    // UI component detail pages are not listed in the sidebar either.
+    if (!nextItem) {
+      const uiSlug = location.pathname.match(/^\/app\/ui\/([^/]+)\/?$/)?.[1];
+      const uiComponent = uiSlug ? getUIComponentBySlug(uiSlug) : undefined;
+      if (uiComponent) {
+        nextItem = { ...uiComponent, title: uiComponent.name, type: 'item' };
+      }
+    }
+
+    setMain(nextMain);
+    setItem(nextItem);
+  }, [currentUrl, custom, location.pathname, location.search]);
 
   // item separator
   const SeparatorIcon = separator;
@@ -107,9 +130,9 @@ export default function Breadcrumbs({
     mainContent = (
       <Typography
         {...(main.url && { component: Link, to: main.url })}
-        variant={window.location.pathname === main.url ? 'subtitle1' : 'h6'}
+        variant={currentUrl === main.url ? 'subtitle1' : 'h6'}
         sx={{ textDecoration: 'none' }}
-        color={window.location.pathname === main.url ? 'text.primary' : 'text.secondary'}
+        color={currentUrl === main.url ? 'text.primary' : 'text.secondary'}
       >
         {icons && <CollapseIcon style={iconSX} />}
         {main?.title}

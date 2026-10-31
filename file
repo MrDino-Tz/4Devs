@@ -6,4 +6,49 @@ so DevOps tools tab category should be there, and then other tab should be at th
 
 
 
- so i also want to add ui ecosystem to this program to have ui components people  can copy and use in their project so how  to start and to integrate to the projecrt
+ so i also want to add ui ecosystem to this program to have ui components people  can copy and use in their project so how  to start and to integrate to the project
+
+
+ 
+
+ ok now at the http://localhost:3000/app, the "Total Tools Available
+25
+100%
+You made an extra Ready to use this year
+Client-Side Processing
+100%
+0
+You made an extra Zero server lag this year"
+
+remove it, and then remove the "4Devs
+Browser-based developer tools and utilities. Everything runs client-side in your browser. Fast, secure, and open-source."
+
+and the logo there.
+
+and this "System Details
+Browser:
+
+Chrome
+Chrome
+
+OS:
+
+Linux
+Linux
+
+IP:
+
+Fetching...
+
+Network:
+
+1.18 Mbps
+
+"
+
+at the top where there is "4Devs Logo
+4Devs
+Browser-based developer tools and utilities. Everything runs client-side in your browser. Fast, secure, and open-source.
+"
+
+and put it with  out card and make it a little visible

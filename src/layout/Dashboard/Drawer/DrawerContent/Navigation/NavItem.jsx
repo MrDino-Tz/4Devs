@@ -16,8 +16,6 @@ import IconButton from 'components/@extended/IconButton';
 
 import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
 
-// ==============================|| NAVIGATION - LIST ITEM ||============================== //
-
 export default function NavItem({ item, level, isParents = false, setSelectedID }) {
   const { menuMaster } = useGetMenuMaster();
   const drawerOpen = menuMaster.isDashboardDrawerOpened;
@@ -49,8 +47,22 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
     false
   );
 
-  const { pathname } = useLocation();
-  const isSelected = !!matchPath({ path: item?.link ? item.link : item.url, end: false }, pathname);
+  const { pathname, search } = useLocation();
+
+  const itemUrl = item?.link || item?.url || '';
+  const [itemPath, itemQuery] = itemUrl.split('?');
+  const itemCategory = new URLSearchParams(itemQuery).get('category');
+  const currentCategory = new URLSearchParams(search).get('category');
+
+  let isSelected;
+  if (itemCategory) {
+    isSelected =
+      (pathname === itemPath && currentCategory === itemCategory) || (itemCategory === 'user-interface' && pathname.startsWith('/app/ui/'));
+  } else if (itemUrl === '/app') {
+    isSelected = pathname === '/app' && !currentCategory;
+  } else {
+    isSelected = !!matchPath({ path: itemPath, end: false }, pathname);
+  }
 
   const textColor = 'text.primary';
   const iconSelectedColor = 'primary.main';

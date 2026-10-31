@@ -22,5 +22,5 @@ export default function Navigation() {
     }
   });
 
-  return <Box sx={{ pt: 2 }}>{navGroups}</Box>;
+  return <Box sx={{ pt: 2, display: 'flex', flexDirection: 'column', flexGrow: 1 }}>{navGroups}</Box>;
 }
