@@ -54,7 +54,7 @@ marked.setOptions({
 
 const SAMPLE_MARKDOWN = `# Hello World
 
-This is a **Markdown to HTML** converter built into OpenSpace-KillerTools.
+This is a **Markdown to HTML** converter built into 4Devs.
 
 ## Features
 

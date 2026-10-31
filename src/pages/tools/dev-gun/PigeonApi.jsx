@@ -103,7 +103,7 @@ const PigeonApi = () => {
 
       <Alert severity="info" sx={{ mb: 3, fontSize: '0.8rem' }}>
         💡 If a request fails with a network error, the target API may not allow cross-origin requests.
-        Try using a CORS proxy or switch to the <strong>OpenSpace Desktop App</strong> for unrestricted access.
+        Try using a CORS proxy or switch to the <strong>4Devs Desktop App</strong> for unrestricted access.
       </Alert>
 
       <Grid container spacing={2}>

@@ -28,9 +28,9 @@ const FORMATS = ['json', 'yaml', 'xml'];
 const INDENT_OPTIONS = [2, 4, 6, 8];
 
 const DEFAULTS = {
-  json: `{\n  "name": "OpenSpace",\n  "version": "1.0.0",\n  "features": ["json", "yaml", "xml"],\n  "active": true\n}`,
-  yaml: `name: OpenSpace\nversion: 1.0.0\nfeatures:\n  - json\n  - yaml\n  - xml\nactive: true`,
-  xml: `<root>\n  <name>OpenSpace</name>\n  <version>1.0.0</version>\n  <features>\n    <item>json</item>\n    <item>yaml</item>\n    <item>xml</item>\n  </features>\n  <active>true</active>\n</root>`
+  json: `{\n  "name": "4Devs",\n  "version": "1.0.0",\n  "features": ["json", "yaml", "xml"],\n  "active": true\n}`,
+  yaml: `name: 4Devs\nversion: 1.0.0\nfeatures:\n  - json\n  - yaml\n  - xml\nactive: true`,
+  xml: `<root>\n  <name>4Devs</name>\n  <version>1.0.0</version>\n  <features>\n    <item>json</item>\n    <item>yaml</item>\n    <item>xml</item>\n  </features>\n  <active>true</active>\n</root>`
 };
 
 function escapeXml(s) {

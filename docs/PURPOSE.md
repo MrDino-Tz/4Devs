@@ -1,12 +1,12 @@
-# 📖 OpenSpace — KillerTools: Purpose & Intent
+# 📖 4Devs: Purpose & Intent
 
 ---
 
 ## Overview
 
-**OpenSpace - KillerTools** is a free, open-source, browser-based utility platform built for professionals who demand speed, privacy, and offline capability. It is not a single tool—it is an **entire ecosystem of precision-crafted utilities** packaged under one roof, accessible without installation, account creation, or internet dependency.
+**4Devs** is a free, open-source, browser-based utility platform built for professionals who demand speed, privacy, and offline capability. It is not a single tool—it is an **entire ecosystem of precision-crafted utilities** packaged under one roof, accessible without installation, account creation, or internet dependency.
 
-The project was born from a simple conviction: the best tools should be **free, fast, and private by default**. Far too many online utilities quietly send your data to remote servers, hide behind paywalls, or bloat their interfaces with ads and noise. OpenSpace - KillerTools is the antithesis of that model.
+The project was born from a simple conviction: the best tools should be **free, fast, and private by default**. Far too many online utilities quietly send your data to remote servers, hide behind paywalls, or bloat their interfaces with ads and noise. 4Devs is the antithesis of that model.
 
 ---
 
@@ -21,7 +21,7 @@ Developers, designers, and security professionals routinely need access to dozen
 
 Each of these typically means navigating to a different website, accepting cookies, waiting for heavy JavaScript to load, and worst of all — **trusting a stranger's server with sensitive input data**.
 
-OpenSpace - KillerTools consolidates all of these into **one cohesive, fast, zero-trust environment**.
+4Devs consolidates all of these into **one cohesive, fast, zero-trust environment**.
 
 ---
 
@@ -47,7 +47,7 @@ The project is fully open-source under the MIT License. The code is the document
 
 ### 5. Aesthetic Excellence Without Compromise
 
-Professional tools do not need to look like 1990s system utilities. OpenSpace - KillerTools is built with a **premium design language** — dark-mode first, smooth transitions, responsive layouts, keyboard-navigable command palette — because beautiful interfaces reduce cognitive friction and increase productive focus.
+Professional tools do not need to look like 1990s system utilities. 4Devs is built with a **premium design language** — dark-mode first, smooth transitions, responsive layouts, keyboard-navigable command palette — because beautiful interfaces reduce cognitive friction and increase productive focus.
 
 ---
 
@@ -60,7 +60,7 @@ Developers are the primary audience. The platform covers their daily utility nee
 Designers need color tools that actually understand color science. The Color Converter handles HEX, RGB, HSL, HSV, and CMYK with real-time contrast ratio calculations (WCAG compliance checking), shade generation, and copy-ready CSS values. The Photo Editor and Image Resizer handle quick media tasks without firing up heavy desktop applications.
 
 ### 🔐 Security Professionals & Privacy-Conscious Users
-Any professional handling sensitive credentials, cryptographic keys, or confidential documents can use OpenSpace - KillerTools with complete confidence. The Password Generator, Strength Analyzer, and PDF Signature Checker are built on standard cryptographic libraries (`node-forge`, Web Crypto API) and produce auditable outputs — no obfuscation, no black boxes.
+Any professional handling sensitive credentials, cryptographic keys, or confidential documents can use 4Devs with complete confidence. The Password Generator, Strength Analyzer, and PDF Signature Checker are built on standard cryptographic libraries (`node-forge`, Web Crypto API) and produce auditable outputs — no obfuscation, no black boxes.
 
 ---
 
@@ -82,7 +82,7 @@ Each category is designed to grow independently. Adding a new tool does not brea
 
 ## The Platform vs. A Collection of Scripts
 
-This is not a GitHub Gist collection or a folder of bookmarks. OpenSpace - KillerTools is a **fully integrated application platform** with:
+This is not a GitHub Gist collection or a folder of bookmarks. 4Devs is a **fully integrated application platform** with:
 
 - A shared design system (Material-UI, custom theme tokens).
 - A global Command Palette (`Ctrl+K`) for instant keyboard-driven navigation across all tools.
@@ -96,7 +96,7 @@ The intent is that as the number of tools grows, the platform's **usability impr
 
 ## The Desktop Edition
 
-Alongside the web platform, an officially maintained **desktop application** (`OpenSpace - KillerTool Desktop`) is distributed as a native binary built with [Tauri](https://tauri.app/). The desktop edition:
+Alongside the web platform, an officially maintained **desktop application** (`4Devs Desktop`) is distributed as a native binary built with [Tauri](https://tauri.app/). The desktop edition:
 
 - Uses the same React codebase as the web version.
 - Adds **native system capabilities** inaccessible from a browser: clipboard manager, screenshot capture, screen recording, and CORS-free API testing.
@@ -118,7 +118,7 @@ The relationship between the web and desktop editions is one of **shared identit
 
 ## 🌍 This Is Open Source — And That Is Non-Negotiable
 
-OpenSpace - KillerTools is **free and open-source software**, licensed under the **MIT License**. This is not a footnote. It is the foundation everything else is built on.
+4Devs is **free and open-source software**, licensed under the **MIT License**. This is not a footnote. It is the foundation everything else is built on.
 
 ### What "Open Source" Means Here
 
@@ -141,13 +141,13 @@ This is especially critical for security tools. When this platform validates a P
 
 Proprietary tools that handle passwords, cryptographic keys, or private documents are a **security and privacy risk by definition** — users have no way to verify what the software actually does with their data. Closed-source "privacy tools" are a contradiction in terms.
 
-By building OpenSpace - KillerTools as open-source software, we make one unambiguous commitment: **you never have to take our word for anything**. The code is the proof.
+By building 4Devs as open-source software, we make one unambiguous commitment: **you never have to take our word for anything**. The code is the proof.
 
 ### The Repository
 
 The full source code is publicly hosted on GitHub:
 
-> **[github.com/MrDino-Tz/OpenSpace-KillerTool](https://github.com/MrDino-Tz/OpenSpace-KillerTool)**
+> **[github.com/MrDino-Tz/4Devs](https://github.com/MrDino-Tz/4Devs)**
 
 Stars, issues, pull requests, and discussions are always open and welcome.
 
@@ -155,7 +155,7 @@ Stars, issues, pull requests, and discussions are always open and welcome.
 
 ## The Long-Term Intent
 
-The long-term intent of OpenSpace - KillerTools is to become the **definitive offline-first developer utility platform** — the tool professionals reach for first, without hesitation, because they trust it completely:
+The long-term intent of 4Devs is to become the **definitive offline-first developer utility platform** — the tool professionals reach for first, without hesitation, because they trust it completely:
 
 1. **Trust through transparency** — every algorithm is readable, auditable, and replaceable.
 2. **Trust through privacy** — data never leaves the device by design.

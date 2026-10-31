@@ -34,7 +34,7 @@ export default function HeaderContent() {
   useEffect(() => {
     let mounted = true;
     setStarLoading(true);
-    fetch('https://api.github.com/repos/MrDino-Tz/OpenSpace-KillerTool')
+    fetch('https://api.github.com/repos/MrDino-Tz/4Devs')
       .then((res) => (res.ok ? res.json() : Promise.reject(res)))
       .then((data) => {
         if (mounted && data && typeof data.stargazers_count === 'number') {
@@ -101,7 +101,7 @@ export default function HeaderContent() {
       {/* GitHub Repo Icon */}
       <IconButton
         component={Link}
-        href="https://github.com/MrDino-Tz/OpenSpace-KillerTool"
+        href="https://github.com/MrDino-Tz/4Devs"
         target="_blank"
         color="secondary"
         title="GitHub Repository"
@@ -142,11 +142,11 @@ export default function HeaderContent() {
 
       {/* About Dialog */}
       <Dialog open={aboutOpen} onClose={handleCloseAbout} maxWidth="xs" fullWidth>
-        <DialogTitle sx={{ fontWeight: 'bold', pb: 1 }}>About OpenSpace - KillerTools</DialogTitle>
+        <DialogTitle sx={{ fontWeight: 'bold', pb: 1 }}>About 4Devs</DialogTitle>
         <DialogContent dividers>
           <Stack spacing={2}>
             <Typography variant="body1">
-              <strong>OpenSpace - KillerTools</strong> is a free, open-source, client-side offline-first utility suite designed for developers, designers, and security professionals.
+              <strong>4Devs</strong> is a free, open-source, client-side offline-first utility suite designed for developers, designers, and security professionals.
             </Typography>
             <Typography variant="body2" color="text.secondary">
               All tools run entirely within your local browser sandbox. No sensitive information, file data, or passwords are ever transmitted to external servers, ensuring complete privacy.
@@ -166,7 +166,7 @@ export default function HeaderContent() {
         <DialogActions sx={{ gap: 1 }}>
           <Button
             component={Link}
-            href="https://github.com/MrDino-Tz/OpenSpace-KillerTool"
+            href="https://github.com/MrDino-Tz/4Devs"
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<GithubOutlined />}

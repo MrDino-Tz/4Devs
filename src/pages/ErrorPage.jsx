@@ -25,13 +25,13 @@ export default function ErrorPage() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', gap: 3, p: 4, textAlign: 'center' }}>
       <Stack direction="row" alignItems="center" spacing={1.5} sx={{ mb: 1 }}>
-        <img src={logo} alt="OpenSpace-KillerTools" width={48} height={48} style={{ borderRadius: '10px' }} />
+        <img src={logo} alt="4Devs" width={48} height={48} style={{ borderRadius: '10px' }} />
         <Stack direction="column" alignItems="flex-start">
           <Typography variant="h4" fontWeight="bold" sx={{ color: theme.palette.text.primary, lineHeight: 1.1 }}>
-            OpenSpace
+            4Devs
           </Typography>
           <Typography variant="subtitle2" fontWeight="bold" sx={{ color: theme.palette.text.secondary, lineHeight: 1.1 }}>
-            KillerTools
+            Developer Tools
           </Typography>
         </Stack>
       </Stack>

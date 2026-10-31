@@ -16,7 +16,7 @@ import logo from 'assets/images/logo.png';
 
 export default function LogoIcon() {
   return (
-    <img src={logo} alt="OpenSpace-KillerTools" width="30" height="30" style={{ borderRadius: '6px' }} />
+    <img src={logo} alt="4Devs" width="30" height="30" style={{ borderRadius: '6px' }} />
   );
 }
 

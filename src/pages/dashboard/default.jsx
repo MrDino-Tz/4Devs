@@ -40,12 +40,12 @@ export default function DashboardDefault() {
           <Box
             component="img"
             src={logo}
-            alt="OpenSpace KillerTools Logo"
+            alt="4Devs Logo"
             sx={{ width: 60, height: 60, borderRadius: 2 }}
           />
           <Box>
             <Typography variant="h3" fontWeight="bold" gutterBottom>
-              OpenSpace-KillerTool
+              4Devs
             </Typography>
             <Typography variant="subtitle1" color="text.secondary">
               Browser-based developer tools and utilities. Everything runs client-side in your browser. Fast, secure, and open-source.

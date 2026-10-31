@@ -126,7 +126,7 @@ function loadFont(fontName) {
 export default function AsciiGenerator() {
   const theme = useTheme();
 
-  const [text, setText] = useState('OpenSpace');
+  const [text, setText] = useState('4Devs');
   const [font, setFont] = useState('Standard');
   const [output, setOutput] = useState('');
   const [loading, setLoading] = useState(false);

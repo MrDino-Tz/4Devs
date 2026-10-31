@@ -1,16 +1,16 @@
-# 🛠️ OpenSpace - KillerTools
+# 🛠️ 4Devs
 
 <p align="center">
-  <img src="./logo1.png" alt="OpenSpace - KillerTools Logo" width="120" />
+  <img src="./logo1.png" alt="4Devs Logo" width="120" />
 </p>
 
 
-[![GitHub license](https://img.shields.io/github/license/MrDino-Tz/OpenSpace-KillerTool?style=flat-square)](https://github.com/MrDino-Tz/OpenSpace-KillerTool/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/MrDino-Tz/OpenSpace-KillerTool?style=flat-square)](https://github.com/MrDino-Tz/OpenSpace-KillerTool/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/MrDino-Tz/OpenSpace-KillerTool?style=flat-square)](https://github.com/MrDino-Tz/OpenSpace-KillerTool/issues)
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=flat-square)](https://MrDino-Tz.github.io/OpenSpace-KillerTool)
+[![GitHub license](https://img.shields.io/github/license/MrDino-Tz/4Devs?style=flat-square)](https://github.com/MrDino-Tz/4Devs/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/MrDino-Tz/4Devs?style=flat-square)](https://github.com/MrDino-Tz/4Devs/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/MrDino-Tz/4Devs?style=flat-square)](https://github.com/MrDino-Tz/4Devs/issues)
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=flat-square)](https://MrDino-Tz.github.io/4Devs)
 
-**OpenSpace - KillerTools** is a free, open-source, client-side, and offline-first utility suite designed for developers, designers, and security professionals.
+**4Devs** is a free, open-source, client-side, and offline-first utility suite designed for developers, designers, and security professionals.
 
 Built with performance, privacy, and aesthetic excellence in mind, all tools run entirely within your local browser sandbox. No sensitive information, file data, or passwords are ever transmitted to external servers—ensuring absolute privacy.
 
@@ -58,8 +58,8 @@ Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
 
 ### 2. Clone and Setup
 ```bash
-git clone https://github.com/MrDino-Tz/OpenSpace-KillerTool.git
-cd OpenSpace-KillerTool
+git clone https://github.com/MrDino-Tz/4Devs.git
+cd 4Devs
 ```
 
 ### 3. Install Dependencies
@@ -90,7 +90,7 @@ npm run deploy
 ---
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MrDino-Tz/OpenSpace-KillerTool/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MrDino-Tz/4Devs/issues).
 
 ---
 

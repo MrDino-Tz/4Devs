@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const PORT = 3000;
 
-  const base = mode === 'production' ? '/OpenSpace-KillerTool/' : (env.VITE_APP_BASE_NAME || '/');
+  const base = mode === 'production' ? '/4Devs/' : (env.VITE_APP_BASE_NAME || '/');
 
   return {
     server: {

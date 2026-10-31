@@ -1,10 +1,10 @@
-# ⚖️ Licensing — OpenSpace KillerTools
+# ⚖️ Licensing — 4Devs
 
 ---
 
 ## License Summary
 
-**OpenSpace - KillerTools** is distributed under the **MIT License**.
+**4Devs** is distributed under the **MIT License**.
 
 This is one of the most permissive and widely-adopted open-source licenses in the world. In plain language, it means:
 
@@ -51,7 +51,7 @@ SOFTWARE.
 
 ## Why MIT?
 
-When choosing a license for OpenSpace - KillerTools, the MIT License was the clear and deliberate choice. Here is why:
+When choosing a license for 4Devs, the MIT License was the clear and deliberate choice. Here is why:
 
 ### 1. Maximum Freedom for Users
 
@@ -59,7 +59,7 @@ The MIT License places no restrictions on what users do with the software. A sec
 
 ### 2. Compatibility With Dependencies
 
-OpenSpace - KillerTools is built on top of excellent open-source libraries — React, Material-UI, Vite, node-forge, marked, and more. The majority of these dependencies are themselves MIT-licensed or Apache 2.0-licensed. The MIT License is compatible with both, ensuring there are no licensing conflicts across the entire dependency tree.
+4Devs is built on top of excellent open-source libraries — React, Material-UI, Vite, node-forge, marked, and more. The majority of these dependencies are themselves MIT-licensed or Apache 2.0-licensed. The MIT License is compatible with both, ensuring there are no licensing conflicts across the entire dependency tree.
 
 Using a copyleft license like GPL would have created friction for anyone wanting to build on top of this work in a closed-source context. MIT removes that barrier entirely.
 
@@ -81,7 +81,7 @@ The MIT License is short, plain-English-readable, and universally understood by 
 
 ## Third-Party Licenses
 
-OpenSpace - KillerTools uses the following open-source libraries. Their licenses are listed below for transparency and compliance:
+4Devs uses the following open-source libraries. Their licenses are listed below for transparency and compliance:
 
 | Library | License | Purpose |
 |---|---|---|
@@ -106,7 +106,7 @@ OpenSpace - KillerTools uses the following open-source libraries. Their licenses
 
 ## Desktop Edition Licensing
 
-The **OpenSpace - KillerTool Desktop** application is a companion project built with [Tauri](https://tauri.app/) (Apache-2.0 / MIT dual-licensed). The desktop edition is also distributed under the **MIT License**, consistent with the web platform.
+The **4Devs Desktop** application is a companion project built with [Tauri](https://tauri.app/) (Apache-2.0 / MIT dual-licensed). The desktop edition is also distributed under the **MIT License**, consistent with the web platform.
 
 Tauri's Rust backend crates are Apache-2.0 and MIT licensed. All Tauri plugins used in the desktop edition (`tauri-plugin-http`, `tauri-plugin-store`, `tauri-plugin-fs`, etc.) are similarly Apache-2.0 / MIT licensed.
 
@@ -116,7 +116,7 @@ There are **no GPL dependencies** in the desktop edition's dependency tree, ensu
 
 ## Contributing & License Acknowledgment
 
-By submitting a pull request or contribution to the OpenSpace - KillerTools repository, you agree that your contribution will be licensed under the same **MIT License** that covers the project. This ensures the entire codebase remains under a single, consistent license.
+By submitting a pull request or contribution to the 4Devs repository, you agree that your contribution will be licensed under the same **MIT License** that covers the project. This ensures the entire codebase remains under a single, consistent license.
 
 No Contributor License Agreement (CLA) is required. The MIT License's terms apply automatically to all accepted contributions.
 
@@ -124,10 +124,10 @@ No Contributor License Agreement (CLA) is required. The MIT License's terms appl
 
 ## Contact & Compliance
 
-If you are using OpenSpace - KillerTools in a product, project, or research and have licensing questions, you can reach the team via:
+If you are using 4Devs in a product, project, or research and have licensing questions, you can reach the team via:
 
-- **GitHub Issues:** [github.com/MrDino-Tz/OpenSpace-KillerTool/issues](https://github.com/MrDino-Tz/OpenSpace-KillerTool/issues)
-- **Repository:** [github.com/MrDino-Tz/OpenSpace-KillerTool](https://github.com/MrDino-Tz/OpenSpace-KillerTool)
+- **GitHub Issues:** [github.com/MrDino-Tz/4Devs/issues](https://github.com/MrDino-Tz/4Devs/issues)
+- **Repository:** [github.com/MrDino-Tz/4Devs](https://github.com/MrDino-Tz/4Devs)
 
 ---
 
