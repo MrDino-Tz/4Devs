@@ -20,7 +20,7 @@ const conversionTools = {
       id: 'text-to-binary',
       title: 'Text to ASCII Binary',
       type: 'item',
-      url: '/tools/conversion/text-to-binary',
+      url: '/app/tools/conversion/text-to-binary',
       icon: icons.FieldBinaryOutlined,
       breadcrumbs: false
     },
@@ -28,7 +28,7 @@ const conversionTools = {
       id: 'markdown-to-html',
       title: 'Markdown to HTML',
       type: 'item',
-      url: '/tools/conversion/markdown-to-html',
+      url: '/app/tools/conversion/markdown-to-html',
       icon: icons.FileMarkdownOutlined,
       breadcrumbs: false
     },
@@ -36,7 +36,7 @@ const conversionTools = {
       id: 'color-converter',
       title: 'Color Converter',
       type: 'item',
-      url: '/tools/conversion/color-converter',
+      url: '/app/tools/conversion/color-converter',
       icon: icons.BgColorsOutlined,
       breadcrumbs: false
     },
@@ -44,7 +44,7 @@ const conversionTools = {
       id: 'code-converters',
       title: 'Code converter',
       type: 'item',
-      url: '/tools/conversion/code-converters',
+      url: '/app/tools/conversion/code-converters',
       icon: icons.CodeOutlined,
       breadcrumbs: false
     }

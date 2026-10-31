@@ -19,17 +19,43 @@ export default function DrawerContent() {
 
   return (
     <>
-      <SimpleBar sx={{ '& .simplebar-content': { display: 'flex', flexDirection: 'column' } }}>
+      <SimpleBar
+        sx={{
+          height: '100%',
+          '& .simplebar-content': { display: 'flex', flexDirection: 'column', minHeight: '100%' }
+        }}
+      >
         <Navigation />
 
-        <Box sx={{ mt: 'auto', p: 2 }}>
-          <Tooltip title="Suggest a feature" placement="right">
+        <Box
+          sx={{
+            mt: 'auto',
+            p: drawerOpen ? 2 : 1,
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
+          <Tooltip title={drawerOpen ? '' : 'Suggest a feature'} placement="right">
             <Button
               variant="contained"
               color="warning"
-              startIcon={<BulbOutlined />}
               onClick={() => setSuggestOpen(true)}
-              fullWidth
+              fullWidth={drawerOpen}
+              aria-label="Suggest a feature"
+              startIcon={drawerOpen ? <BulbOutlined /> : null}
+              sx={
+                drawerOpen
+                  ? undefined
+                  : {
+                      minWidth: 0,
+                      width: 40,
+                      height: 40,
+                      p: 0,
+                      borderRadius: 2,
+                      fontSize: 18,
+                      '& .MuiButton-startIcon': { m: 0 }
+                    }
+              }
             >
               {drawerOpen ? 'Suggest' : <BulbOutlined />}
             </Button>

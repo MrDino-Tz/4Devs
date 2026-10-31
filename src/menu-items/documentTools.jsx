@@ -11,7 +11,7 @@ const documentTools = {
       id: 'pdf-editor',
       title: 'PDF Editor',
       type: 'item',
-      url: '/tools/document/pdf-editor',
+      url: '/app/tools/document/pdf-editor',
       icon: icons.FilePdfOutlined,
       breadcrumbs: false
     }

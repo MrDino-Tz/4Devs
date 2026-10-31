@@ -15,7 +15,7 @@ const cryptoTools = {
       id: 'password-generator',
       title: 'Password Generator',
       type: 'item',
-      url: '/tools/crypto/password-generator',
+      url: '/app/tools/crypto/password-generator',
       icon: icons.KeyOutlined,
       breadcrumbs: false
     },
@@ -23,7 +23,7 @@ const cryptoTools = {
       id: 'password-analyzer',
       title: 'Password Analyzer',
       type: 'item',
-      url: '/tools/crypto/password-analyzer',
+      url: '/app/tools/crypto/password-analyzer',
       icon: icons.LockOutlined,
       breadcrumbs: false
     },
@@ -31,7 +31,7 @@ const cryptoTools = {
       id: 'pdf-signature-checker',
       title: 'PDF Signature Checker',
       type: 'item',
-      url: '/tools/crypto/pdf-signature-checker',
+      url: '/app/tools/crypto/pdf-signature-checker',
       icon: icons.SafetyCertificateOutlined,
       breadcrumbs: false
     }

@@ -11,7 +11,7 @@ const mediaTools = {
       id: 'image-resizer',
       title: 'Image Resizer',
       type: 'item',
-      url: '/tools/media/image-resizer',
+      url: '/app/tools/media/image-resizer',
       icon: icons.ScissorOutlined,
       breadcrumbs: false
     },
@@ -19,7 +19,7 @@ const mediaTools = {
       id: 'photo-editor',
       title: 'Photo Editor',
       type: 'item',
-      url: '/tools/media/photo-editor',
+      url: '/app/tools/media/photo-editor',
       icon: icons.EditOutlined,
       breadcrumbs: false
     },
@@ -27,7 +27,7 @@ const mediaTools = {
       id: 'qr-code-generator',
       title: 'QR Code Generator',
       type: 'item',
-      url: '/tools/media/qr-code-generator',
+      url: '/app/tools/media/qr-code-generator',
       icon: icons.QrcodeOutlined,
       breadcrumbs: false
     }

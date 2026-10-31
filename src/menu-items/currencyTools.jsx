@@ -11,7 +11,7 @@ const currencyTools = {
       id: 'currency-converter',
       title: 'Currency Converter',
       type: 'item',
-      url: '/tools/conversion/currency-converter',
+      url: '/app/tools/conversion/currency-converter',
       icon: icons.MoneyCollectOutlined,
       breadcrumbs: false
     }

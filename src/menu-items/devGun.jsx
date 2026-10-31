@@ -9,7 +9,7 @@ const devGun = {
       id: 'pigeon-api',
       title: 'Pigeon API',
       type: 'item',
-      url: '/tools/dev-gun/pigeon-api',
+      url: '/app/tools/dev-gun/pigeon-api',
       icon: ApiOutlined,
       breadcrumbs: false
     },
@@ -17,7 +17,7 @@ const devGun = {
       id: 'regex-tester',
       title: 'Regex Tester',
       type: 'item',
-      url: '/tools/dev-gun/regex-tester',
+      url: '/app/tools/dev-gun/regex-tester',
       icon: AuditOutlined,
       breadcrumbs: false
     },
@@ -25,7 +25,7 @@ const devGun = {
       id: 'file-meta-reader',
       title: 'File Meta Reader',
       type: 'item',
-      url: '/tools/dev-gun/file-meta-reader',
+      url: '/app/tools/dev-gun/file-meta-reader',
       icon: FileTextOutlined,
       breadcrumbs: false
     }

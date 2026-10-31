@@ -9,7 +9,7 @@ const wifiShark = {
       id: 'wifi-qr-decoder',
       title: 'WiFi QR Decoder',
       type: 'item',
-      url: '/tools/wifi-shark/qr-decoder',
+      url: '/app/tools/wifi-shark/qr-decoder',
       icon: ScanOutlined,
       breadcrumbs: false
     },
@@ -17,7 +17,7 @@ const wifiShark = {
       id: 'wifi-qr-generator',
       title: 'WiFi QR Generator',
       type: 'item',
-      url: '/tools/wifi-shark/qr-generator',
+      url: '/app/tools/wifi-shark/qr-generator',
       icon: QrcodeOutlined,
       breadcrumbs: false
     },
@@ -25,7 +25,7 @@ const wifiShark = {
       id: 'mac-lookup',
       title: 'MAC Address Lookup',
       type: 'item',
-      url: '/tools/wifi-shark/mac-lookup',
+      url: '/app/tools/wifi-shark/mac-lookup',
       icon: LaptopOutlined,
       breadcrumbs: false
     },
@@ -33,7 +33,7 @@ const wifiShark = {
       id: 'subnet-calculator',
       title: 'Subnet Calculator',
       type: 'item',
-      url: '/tools/wifi-shark/subnet-calculator',
+      url: '/app/tools/wifi-shark/subnet-calculator',
       icon: CalculatorOutlined,
       breadcrumbs: false
     },
@@ -41,7 +41,7 @@ const wifiShark = {
       id: 'wifi-password-generator',
       title: 'WiFi Password Generator',
       type: 'item',
-      url: '/tools/wifi-shark/wifi-password-generator',
+      url: '/app/tools/wifi-shark/wifi-password-generator',
       icon: KeyOutlined,
       breadcrumbs: false
     },
@@ -49,7 +49,7 @@ const wifiShark = {
       id: 'default-router-passwords',
       title: 'Default Router Passwords',
       type: 'item',
-      url: '/tools/wifi-shark/default-router-passwords',
+      url: '/app/tools/wifi-shark/default-router-passwords',
       icon: SafetyCertificateOutlined,
       breadcrumbs: false
     },
@@ -57,7 +57,7 @@ const wifiShark = {
       id: 'speed-test-history',
       title: 'Speed Test History',
       type: 'item',
-      url: '/tools/wifi-shark/speed-test-history',
+      url: '/app/tools/wifi-shark/speed-test-history',
       icon: LineChartOutlined,
       breadcrumbs: false
     },
@@ -65,7 +65,7 @@ const wifiShark = {
       id: 'port-lookup',
       title: 'Port Number Lookup',
       type: 'item',
-      url: '/tools/wifi-shark/port-lookup',
+      url: '/app/tools/wifi-shark/port-lookup',
       icon: NumberOutlined,
       breadcrumbs: false
     }

@@ -49,13 +49,12 @@ const PortLookup = Loadable(lazy(() => import('pages/tools/wifi-shark/PortLookup
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
-  path: '/',
+  path: '/app',
   element: <DashboardLayout />,
   errorElement: <ErrorPage />,
   children: [
-
     {
-      path: '/',
+      index: true,
       element: <DashboardDefault />
     },
     {

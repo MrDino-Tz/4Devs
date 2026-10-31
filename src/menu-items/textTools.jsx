@@ -14,7 +14,7 @@ const textTools = {
       id: 'ascii-generator',
       title: 'ASCII Word Art Generator',
       type: 'item',
-      url: '/tools/text/ascii-generator',
+      url: '/app/tools/text/ascii-generator',
       icon: icons.FontSizeOutlined,
       breadcrumbs: false
     },
@@ -22,7 +22,7 @@ const textTools = {
       id: 'emoji-picker',
       title: 'Emoji Picker',
       type: 'item',
-      url: '/tools/text/emoji-picker',
+      url: '/app/tools/text/emoji-picker',
       icon: icons.SmileOutlined,
       breadcrumbs: false
     }
