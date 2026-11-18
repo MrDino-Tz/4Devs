@@ -92,7 +92,7 @@ export default function SystemInfoCard() {
     let cancelled = false;
 
     const measure = async () => {
-      const url = `${import.meta.env.BASE_URL}assets/images/logo.png`;
+      const url = `${import.meta.env.BASE_URL}speedtest-chunk.bin`;
       const start = performance.now();
       try {
         const res = await fetch(url, { cache: 'no-store' });

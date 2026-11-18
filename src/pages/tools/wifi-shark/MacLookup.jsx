@@ -18,7 +18,7 @@ import {
   LinearProgress,
   Tooltip,
 } from '@mui/material';
-import { SearchOutlined, ClearOutlined, CopyOutlined } from '@ant-design/icons';
+import { SearchOutlined, ClearOutlined, CopyOutlined, WifiOutlined } from '@ant-design/icons';
 import MainCard from 'components/MainCard';
 import { useTheme } from '@mui/material/styles';
 
@@ -158,7 +158,14 @@ export default function MacLookup() {
   }, []);
 
   return (
-    <MainCard title="MAC Address Lookup">
+    <MainCard
+      title={
+        <Stack direction="row" alignItems="center" gap={1.5}>
+          <span>MAC Address Lookup</span>
+          <Chip icon={<WifiOutlined />} label="Online Required" size="small" color="info" variant="outlined" />
+        </Stack>
+      }
+    >
       <Stack spacing={3}>
         <Paper sx={{ p: 3 }}>
           <Stack spacing={2}>

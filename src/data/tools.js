@@ -8,7 +8,7 @@ const ALL_TOOLS = [
   { name: 'Code converter', desc: 'Convert between JSON and YAML formats', path: '/app/tools/conversion/code-converters', category: 'Conversion Tools', icon: 'CodeOutlined' },
   { name: 'Password Generator', desc: 'Generate secure random passwords', path: '/app/tools/crypto/password-generator', category: 'CryptOK', icon: 'KeyOutlined' },
   { name: 'Password Analyzer', desc: 'Check password strength and crack time', path: '/app/tools/crypto/password-analyzer', category: 'CryptOK', icon: 'LockOutlined' },
-  { name: 'PDF Signature Checker', desc: 'Validate digital signatures in PDFs', path: '/app/tools/crypto/pdf-signature-checker', category: 'CryptOK', icon: 'SafetyCertificateOutlined' },
+  { name: 'PDF Signature Inspector', desc: 'Inspect embedded certificates in signed PDFs', path: '/app/tools/crypto/pdf-signature-checker', category: 'CryptOK', icon: 'SafetyCertificateOutlined' },
   { name: 'Image Resizer', desc: 'Crop, resize, and rotate images', path: '/app/tools/media/image-resizer', category: 'Image/Video', icon: 'ScissorOutlined' },
   { name: 'Photo Editor', desc: 'Add text, overlays, paint, and erase on photos', path: '/app/tools/media/photo-editor', category: 'Image/Video', icon: 'EditOutlined' },
   { name: 'QR Code Generator', desc: 'Generate QR codes from text, URLs, or any data', path: '/app/tools/media/qr-code-generator', category: 'Image/Video', icon: 'QrcodeOutlined' },

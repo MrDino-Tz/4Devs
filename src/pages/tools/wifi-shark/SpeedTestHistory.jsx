@@ -202,13 +202,13 @@ export default function SpeedTestHistory() {
 
   const runPing = useCallback(async () => {
     const start = performance.now();
-    await fetch(`/logo.png?_t=${Date.now()}`, { method: 'HEAD', cache: 'no-store', mode: 'same-origin' });
+    await fetch(`${import.meta.env.BASE_URL}speedtest-chunk.bin?_t=${Date.now()}`, { method: 'HEAD', cache: 'no-store', mode: 'same-origin' });
     return performance.now() - start;
   }, []);
 
   const runDownloadSample = useCallback(async () => {
     const start = performance.now();
-    const resp = await fetch(`/logo.png?_t=${Date.now()}`, { cache: 'no-store', mode: 'same-origin' });
+    const resp = await fetch(`${import.meta.env.BASE_URL}speedtest-chunk.bin?_t=${Date.now()}`, { cache: 'no-store', mode: 'same-origin' });
     const blob = await resp.blob();
     const dur = (performance.now() - start) / 1000;
     const Mbps = (blob.size * 8) / dur / 1_000_000;

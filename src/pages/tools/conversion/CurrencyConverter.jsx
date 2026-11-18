@@ -16,7 +16,7 @@ import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
 // icons
-import { MoneyCollectOutlined, SwapOutlined, CopyOutlined } from '@ant-design/icons';
+import { MoneyCollectOutlined, SwapOutlined, CopyOutlined, WifiOutlined } from '@ant-design/icons';
 
 // project imports
 import MainCard from 'components/MainCard';
@@ -115,7 +115,7 @@ export default function CurrencyConverter() {
         setLastUpdated(data.time_last_update_utc);
       })
       .catch(() => {
-        setSnackMsg('Failed to fetch exchange rates');
+        setSnackMsg(navigator.onLine ? 'Failed to fetch exchange rates. Try again later.' : 'You are offline. Exchange rates are unavailable.');
         setSnackOpen(true);
       });
   }, []);
@@ -184,6 +184,7 @@ export default function CurrencyConverter() {
           <Typography variant="h3" fontWeight="bold">
             Currency Converter
           </Typography>
+          <Chip icon={<WifiOutlined />} label="Online Required" size="small" color="info" variant="outlined" />
         </Stack>
         <Typography variant="body1" color="text.secondary">
           Convert currencies in real-time with support for 160+ world currencies including Tanzanian Shilling (TZS) and Kenyan Shilling (KES).

@@ -141,12 +141,13 @@ export default function PdfSignatureChecker() {
         <Stack direction="row" alignItems="center" gap={1.5} sx={{ mb: 1 }}>
           <SafetyCertificateOutlined style={{ fontSize: 28, color: theme.palette.primary.main }} />
           <Typography variant="h3" fontWeight="bold">
-            PDF Signature Checker
+            PDF Signature Inspector
           </Typography>
         </Stack>
         <Typography variant="body1" color="text.secondary">
-          Validate digital signatures in PDF documents. Extracts the embedded PKCS#7 certificate to verify the signer's identity and certificate authority. 
-          <strong> Everything runs locally in your browser — your PDF is never uploaded to any server.</strong>
+          Inspect digital signatures embedded in PDF documents. Extracts the embedded PKCS#7 certificate to display the signer's identity and certificate validity period.{' '}
+          <strong>Everything runs locally in your browser — your PDF is never uploaded to any server.</strong>
+          {' '}Note: this tool inspects certificate metadata only and does not cryptographically verify the document byte-range integrity.
         </Typography>
       </Box>
 
@@ -230,10 +231,10 @@ export default function PdfSignatureChecker() {
                   sx={{ '& .MuiAlert-message': { width: '100%' } }}
                 >
                   <Typography variant="subtitle1" fontWeight="bold">
-                    Valid Digital Signature Found
+                    Embedded Signature Certificate Found
                   </Typography>
                   <Typography variant="body2">
-                    The document contains an embedded PKCS#7 signature.
+                    A PKCS#7 signature block was detected. Certificate metadata is shown below. Document byte-range integrity is not verified.
                   </Typography>
                 </Alert>
 
