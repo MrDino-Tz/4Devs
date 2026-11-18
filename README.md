@@ -19,7 +19,7 @@ Built with performance, privacy, and aesthetic excellence in mind, all tools run
 ### Crypto & Security
 *   **Cryptographically Secure Password Generator:** Generate strong passwords, passphrases, UUIDs, and API keys with customization options and exportable QR codes.
 *   **zxcvbn Strength Analyzer:** Analyze passwords locally to estimate cracking duration against brute-force attacks with interactive visualization charts.
-*   **PDF Signature Checker:** Validate PKCS#7 digital signatures and X.509 certificate chains locally on uploaded PDFs using client-side cryptography.
+*   **PDF Signature Inspector:** Inspect PKCS#7 digital signatures and X.509 certificate chains embedded in uploaded PDFs using client-side cryptography. Note: this tool surfaces certificate data for inspection — it does not perform full cryptographic signature verification.
 
 ### Design & Palette
 *   **Aesthetic Color Converter:** Seamlessly convert colors between HEX, RGB, HSL, HSV, CMYK, and CSS Name formats. Generates lighter/darker variations and computes real-time contrast ratios against black and white.

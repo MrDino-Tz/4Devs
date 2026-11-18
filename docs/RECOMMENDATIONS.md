@@ -40,15 +40,15 @@ Effort estimates: **S** = ≤ 1 day, **M** = 2–4 days, **L** = 1–2 weeks, **
 These are not new features, but they must ship before adding more security tooling.
 They are documented in detail in the project audit.
 
-| # | Item | Why it matters | Effort |
-|---|---|---|---|
-| 0.1 | **Make the PDF Signature Checker honest** | It currently extracts a certificate and displays “Valid Digital Signature Found” without verifying the signature, PDF byte ranges, or certificate chain. Either implement verification (`p7.verify()`, digest comparison, chain/trust anchors) or rename it **“PDF Signature Inspector”** and remove the word *Valid*. | L |
-| 0.2 | **Harden password generation** | Replace modulo reduction with rejection sampling, replace `Math.random()` in passphrase/pronounceable presets with a CSPRNG, and guarantee the selected character classes. | S–M |
-| 0.3 | **Patch vulnerable dependencies** | `dompurify` (XSS, used by Markdown preview), `pdfjs-dist` (malicious-PDF JS execution), `node-forge`, `react-router`, `figlet`. | M |
-| 0.4 | **Fix or remove the speed tests** | `/logo.png` does not exist in production builds. Ship a real asset or endpoint, and label the result as an *approximate* check. | S |
-| 0.5 | **Align privacy/offline wording** | Mark Currency, MAC Lookup, IP/GitHub lookups, and ASCII CDN fonts as *online* tools. | S |
-| 0.6 | **Add `LICENSE`** | MIT is claimed everywhere, but no file exists and the footer link 404s. | S |
-| 0.7 | **Replace the legacy deploy workflow** | `.github/workflows/prod.yml` targets an unrelated SSH host on `master`. Rewrite for GitHub Pages or delete. | S |
+| # | Item | Why it matters | Effort | Status |
+|---|---|---|---|---|
+| 0.1 | **Rename PDF Signature Checker → PDF Signature Inspector** | Tool extracts a certificate but cannot fully verify the signature, PDF byte ranges, or certificate chain. UI text, tool name, and description updated to reflect inspection-only scope; “Valid Digital Signature Found” alert replaced with “Embedded Signature Certificate Found”. | L | ✅ Done |
+| 0.2 | **Harden password generation** | Replace modulo reduction with rejection sampling, replace `Math.random()` in passphrase/pronounceable presets with a CSPRNG, and guarantee the selected character classes. | S–M | 🟲 Open |
+| 0.3 | **Patch vulnerable dependencies** | `dompurify` (XSS, used by Markdown preview), `pdfjs-dist` (malicious-PDF JS execution), `node-forge`, `react-router`, `figlet`. | M | 🟲 Open |
+| 0.4 | **Fix speed test assets** | `/logo.png` did not exist in production builds. Added `public/speedtest-chunk.bin` (100 KiB) as fetch target; updated `SystemInfoCard.jsx` and `SpeedTestHistory.jsx`. Speed test result labelled as approximate. | S | ✅ Done |
+| 0.5 | **Mark online-dependent tools in the UI** | Added an **“Online Required”** chip (Wi-Fi icon) to the title bar of **Currency Converter** and **MAC Lookup**. These tools call external APIs and cannot function offline. Fetch error handling in Currency Converter distinguishes offline vs. server errors. | S | ✅ Done |
+| 0.6 | **Add `LICENSE` file** | MIT is claimed everywhere but no file existed. Added `LICENSE` (MIT, © 2026 DTC Team) to the repository root. | S | ✅ Done |
+| 0.7 | **Replace the legacy deploy workflow** | `.github/workflows/prod.yml` targeted an unrelated SSH host on `master`. Replaced with a **GitHub Pages** workflow using `peaceiris/actions-gh-pages` that builds with `npm` and deploys `dist/`. | S | ✅ Done |
 
 ---
 
@@ -186,7 +186,7 @@ and `src/routes/MainRoutes.jsx`. **Effort:** M total (S each).
 |---|---|
 | Password Generator | Rejection sampling; EFF-style wordlist for passphrases; per-class guarantees; entropy estimate; “avoid ambiguous characters”; history with manual clear; QR export already present |
 | Password Analyzer | Actionable zxcvbn feedback, dictionary/pattern explanation, offline breach-check option via k-anonymity (opt-in, clearly online), downloadable report |
-| PDF Signature Checker | Real cryptographic verification, signer-vs-issuer selection, certificate chain viewer, tamper/byte-range status, trust-store explanation, clear “verified / not verified / cannot verify” states |
+| PDF Signature Inspector | Real cryptographic verification (signature + byte-range digest + chain validation), signer-vs-issuer selection, certificate chain viewer, tamper/byte-range status, trust-store explanation, clear “verified / not verified / cannot verify” states |
 
 #### 📝 Text Tools
 

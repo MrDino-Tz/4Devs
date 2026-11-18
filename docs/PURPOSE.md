@@ -16,7 +16,7 @@ Developers, designers, and security professionals routinely need access to dozen
 
 - A password generator here.
 - A color converter there.
-- A PDF signature validator somewhere else.
+- A PDF signature inspector somewhere else.
 - A Markdown previewer on another tab.
 
 Each of these typically means navigating to a different website, accepting cookies, waiting for heavy JavaScript to load, and worst of all — **trusting a stranger's server with sensitive input data**.
@@ -60,7 +60,7 @@ Developers are the primary audience. The platform covers their daily utility nee
 Designers need color tools that actually understand color science. The Color Converter handles HEX, RGB, HSL, HSV, and CMYK with real-time contrast ratio calculations (WCAG compliance checking), shade generation, and copy-ready CSS values. The Photo Editor and Image Resizer handle quick media tasks without firing up heavy desktop applications.
 
 ### 🔐 Security Professionals & Privacy-Conscious Users
-Any professional handling sensitive credentials, cryptographic keys, or confidential documents can use 4Devs with complete confidence. The Password Generator, Strength Analyzer, and PDF Signature Checker are built on standard cryptographic libraries (`node-forge`, Web Crypto API) and produce auditable outputs — no obfuscation, no black boxes.
+Any professional handling sensitive credentials, cryptographic keys, or confidential documents can use 4Devs with complete confidence. The Password Generator, Strength Analyzer, and PDF Signature Inspector are built on standard cryptographic libraries (`node-forge`, Web Crypto API) and produce auditable outputs — no obfuscation, no black boxes. Note: the PDF Signature Inspector surfaces embedded certificate data for inspection; full cryptographic chain verification is a planned enhancement.
 
 ---
 
@@ -70,11 +70,11 @@ The platform is organized into thematic **categories**, each targeting a distinc
 
 | Category        | Purpose                                                                                 |
 |-----------------|-----------------------------------------------------------------------------------------|
-| **CryptOK**     | Cryptographic utilities — password generation, strength analysis, certificate validation |
+| **CryptOK**     | Cryptographic utilities — password generation, strength analysis, PDF certificate inspection |
 | **Text Tools**  | Text manipulation — Markdown, Binary encoding, ASCII Art, Emoji catalog                 |
 | **Conversion**  | Format converters — Color spaces, Currency rates                                        |
 | **Image/Video** | Visual tools — Image resizer, Photo editor                                              |
-| **OpenDoc**     | Document tools — PDF editing, PDF signature checking                                    |
+| **OpenDoc**     | Document tools — PDF editing, PDF signature inspection                                  |
 
 Each category is designed to grow independently. Adding a new tool does not break the platform's architecture — it is **plug-and-play by design**, driven by a centralized route and menu registry.
 
@@ -135,7 +135,7 @@ If you disagree with a design decision, want to build your own flavor, or need t
 Bug fixes, new tools, UI improvements, translations, documentation — all contributions are welcome via pull requests. The project grows because the community grows it. No corporate gatekeeper. No closed steering committee.
 
 **Anyone can audit it.**
-This is especially critical for security tools. When this platform validates a PDF signature or analyzes password entropy, you should never have to trust a marketing claim. You can read the cryptographic implementation yourself, have it reviewed by an expert, or run it in isolation. **Trustworthy security software must be open source. There is no alternative.**
+This is especially critical for security tools. When this platform inspects a PDF signature certificate or analyzes password entropy, you should never have to trust a marketing claim. You can read the cryptographic implementation yourself, have it reviewed by an expert, or run it in isolation. **Trustworthy security software must be open source. There is no alternative.**
 
 ### Why Open Source Was the Only Choice
 
